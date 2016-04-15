@@ -2,11 +2,13 @@
 
 module PlatformP {
 	provides interface Init;
+	uses interface Init as MoteInit;
 	uses interface Init as LedsInit;
 }
 
 implementation {
 	command error_t Init.init() {
+		call MoteInit.init();
 		call LedsInit.init();
 		return SUCCESS;
 	}

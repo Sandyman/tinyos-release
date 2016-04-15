@@ -1,0 +1,6 @@
+.*~
+*~ 
+apps/*/build
+
+# Environment variables
+tinyos.env
