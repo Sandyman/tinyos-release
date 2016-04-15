@@ -13,10 +13,10 @@
  * @author David Gay
  */
 
-generic configuration DemoSensorC()
-{
+generic configuration DemoSensorC() {
   provides interface Read<uint16_t>;
 }
+
 implementation {
   components new TempC() as Sensor;
 
