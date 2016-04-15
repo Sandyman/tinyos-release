@@ -1,0 +1,6 @@
+PLATFORM = waspmote
+
+$(call TOSMake_include_platform,avr)
+
+waspmote: $(BUILD_DEPS)
+	@:
